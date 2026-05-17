@@ -40,4 +40,8 @@ public class PlayerScript : MonoBehaviour
     {
         rb.linearVelocity = (transform.forward*yVal + transform.right*xVal)*speed + rb.linearVelocity.y*transform.up;
     }
+    void OnInteract()
+    {
+        print("Right clicked");
+    }
 }
